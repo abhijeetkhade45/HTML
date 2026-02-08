@@ -1,0 +1,66 @@
+    <!-- picture -->
+     <picture>
+        <source media="(min-width:1080px)" srcset="https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png"&gt;
+        <source media="(min-width:768px)" srcset="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Motu_Patlu.Jpg/250px-Motu_Patlu.Jpg"&gt;
+         <img src="https://i.pinimg.com/736x/59/a0/d7/59a0d73139b06bd5191bfd6e12758b42.jpg&quot; alt="shinchan" height="200">
+     </picture>
+     <!-- video -->
+      <video height="400" controls autoplay muted>
+        <source src="./6.mp4">
+         <track
+    label="English"
+    kind="subtitles"
+    srclang="en"
+    src="./Titanic.1997.720p.BluRay.x264-.YTS.AG.srt"
+    default />
+      </video>
+      <audio controls >
+        <source src="./file_example_MP3_1MG (3).mp3">
+      </audio>
+
+      <!--Iframe-->
+      <iframe src="../formatting-tags/index.html" height="400" width="400"></iframe>
+      <iframe src="./Frontend development roadmap.pdf" height="400" width="400"></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/t0Q2otsqC4I?si=IK2sJzShvkP563DC&quot; title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60903.160631821884!2d78.3804734216797!3d17.43828090000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb912861d539e3%3A0x711d51b1810fe330!2sNaresh%20IT%20New%20Campus!5e0!3m2!1sen!2sin!4v1754654977827!5m2!1sen!2sin&quot; width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>media : HTML5 supports lot of media elements such as responsive images, videos, audio, iframes etc..,  i. picture tag : picture tag allows the browser to choose different images based on device
+     it contains 'source' tags to provides sources with 'srcset' and make it work with 'media' for different devices.
+     Always sources media should be in decreasing order and need to keep default img tag at last.
+    <picture>
+        <source media="(min-width:1080px)" srcset="https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png"&gt;
+        <source media="(min-width:768px)" srcset="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Motu_Patlu.Jpg/250px-Motu_Patlu.Jpg"&gt;
+         <img src="https://i.pinimg.com/736x/59/a0/d7/59a0d73139b06bd5191bfd6e12758b42.jpg&quot; alt="shinchan" height="200">
+     </picture>
+
+  ii. videos: we can include videos using 'video' tag whose source is provided by 'source' tag
+      <video height="400" controls autoplay muted>
+        <source src="./6.mp4">
+         <track
+    label="English"
+    kind="subtitles"
+    srclang="en"
+    src="./Titanic.1997.720p.BluRay.x264-.YTS.AG.srt"
+    default />
+      </video>
+video tag uses attributes like
+       controls -- to get all control like play,pause,download etc..,
+       muted -- to mute the audio by default
+       autoplay -- to play the video on page load
+       Google chrome will not support autoplay unless it is muted
+
+ 3. audio tag : This tag is used to display audios. it also uses source to display specific audio
+        <audio controls>
+            <source src="path">
+        </audio>
+4. track: track is used to assign captions or subtitles for videos, it uses 'label' attribute for name , 'src' attribute for source file, 'srclang' attribute to specify source language
+
+<track
+    label="English"
+    kind="subtitles"
+    srclang="en"
+    src="./Titanic.1997.720p.BluRay.x264-.YTS.AG.srt"
+    default />
+
+5. Iframe(inline Frame): it is an Internal Frame which is used to keep one html document inside another html document.
+it also allows different domains codes embed into another html document

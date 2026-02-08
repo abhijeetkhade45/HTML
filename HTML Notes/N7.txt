@@ -1,0 +1,72 @@
+Form Validation:
+Is it possible to validate inputs in HTML without JS?
+Yes, it is possible using some attributes such as required, max,min,pattern etc..,
+  required: it is used to make input field mandatory before submitting the form.
+  min: it is used to provide minimum value to number input value
+  max: it is used to provide maximum value to number input
+  minlength : it is used to provide minimum length(no of characters) to text input
+  maxlength : it is used to provide maximum length to text input
+  disabled : it is used to make an input disabled and it will not be submitted.
+  readonly: it is used to make the input only readable and it will be submitted with the form.
+
+  Regular Expressions:
+    Regular Expressions or regex are used to validate patterns such as inputs , data etc.., They match patterns like a string and it uses lot of symbols with each symbol different purpose
+    1. []  -- it is used to represent a group
+    2. {}  -- it is used to specify a range
+        {a}-- exactly a characters
+        {a,} -- minimum a characters
+        {a,b} -- minimum a and maximum b characters
+    3. \d -- digits, \w -- words
+    4. . -- wildcard -- any characters
+    5. * -- 0 or more of previous
+    6. + -- 1 or more of previous
+
+   email validation: [A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{2,}
+   phno validation : [0-9]{10}
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="main.java">
+        <h1>Welcome to Prasad World</h1>
+        <input type="text" placeholder="Enter full name" name="na"  pattern="a?">
+        <br><br>
+        <input type="email" placeholder="Enter an email" pattern="[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{2,}"><br><br>
+        <!---  a@a.ac  -->
+        <input type="number" name="age" placeholder="Enter your age" min="18" required max="56"><br><br>
+        <input type="password" name="pwd" placeholder="Enter password" minlength="8" maxlength="16"><br><br>
+        <input type="text" name="class" value="html" readonly><br><br>
+        <input type="number" name="pno" placeholder="Enter phone number" pattern="[0-9]{10}" disabled>
+        <input type="number" placeholder="Enter phone number" disabled>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
+
+Post by Durga Prasad
+Durga Prasad
+Created 13 Aug13 Aug
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <!-- svg-->
+     <svg>
+        <circle cx="200" cy="100" r="50" fill="red"></circle>
+        <rect x="100" y="60" height="100" width="100" rx="20" ry="20" fill="red"></rect>
+     </svg>
+     <svg>
+        <path d="M 20 20 L 20 150  L 350 150 L 350 20 Z " fill="red"></path>
+     </svg>
+</body>
+</html>

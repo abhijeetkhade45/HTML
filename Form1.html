@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Software Traing Registeration Form</h1>
+    <form action="/temp1.html" method="get">
+        <fieldset>
+        <legend>Personel Details</legend> <br>
+        <label for="fname">Full Name :</label>
+        <input type="text" name="fname" id="fname"> <br> <br>
+                <label for="emailadd">Email Address :</label>
+        <input type="email" name="emailadd" id="emailadd"> <br> <br>
+                <label for="fname">Phone Number :</label>
+        <input type="text" name="num" id="num" pattern="[0-9]+"> <br><br>
+        <label for="heq">Highest Education Qualification :</label>
+        <select name="heq" id="heq">
+            <option value="--Select Education Detail--">--Select Education Detail--</option>
+            <option value="Secondary Education">Secondary Education</option>
+            <option value="Higher Secondary">Higher Secondary</option>
+            <option value="UnderGraduate">UnderGraduate</option>
+            <option value="Graduate">Graduate</option>
+            </select><br> <br>
+            <label >Employment Status :</label> <br>
+            <input name="es" id="st"  type="radio">
+            <label for="st">Student</label> <br>
+            <input name="es" id="em"  type="radio">
+            <label for="em">Employed</label> <br>
+            <input name="es" id="ue"  type="radio">
+            <label for="ue">Unemployed</label> <br>
+             <input name="es" id="se"  type="radio">
+            <label for="se">Self-Employed</label>
+            
+        
+    </fieldset>
+
+    <fieldset>
+        <legend>Course Selction</legend> <br>
+        <label for="cc">Course category :</label>
+        <select name="cc" id="cc">
+            <option value="">--Select Course Category--</option>
+            <option value="UI/UX">UI/UX</option>
+            <option value="Manager">Manager</option>
+            <option value="Information Tech">Information tech</option>
+        </select> <br><br>
+        <label for="spc">Specific Course :</label>
+        <select name="spc" id="spc">
+            <option value="--First Select Category--">--First Select Category--</option>
+            <option value="Fullstack">Fullstack</option>
+            <option value="FrontEnd">FrontEnd</option>
+            <option value="BackEnd">BackEnd</option>
+        </select> <br> <br>
+         <label for="cl">Specific Course :</label> <br>
+        <select name="cl" id="cl">
+            <option value="-- Select Level--">--Select Level--</option>
+            <option value="l1">LEVEL1</option>
+            <option value="l2">LEVEL2</option>
+            <option value="l3">LEVEL3</option>
+        </select> <br><br>
+         <label for="pbt">Prefrerred Batch Time : :</label> <br>
+        <select name="pbt" id="pbt">
+            <option value="-- Select Timing--">--Select Timing--</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Technical Backgraounds</legend> <br><br>
+        <label >Programming Language known (Select All ) : </label> <br>
+        <input id="j" type="checkbox">
+        <label for="j">Java</label> <br>
+        <input id="p" type="checkbox">
+        <label for="p">Python</label> <br>
+        <input id="js" type="checkbox">
+        <label for="js">Javascript</label> <br>
+        <input id="c" type="checkbox">
+        <label for="c">C#</label> <br>
+        <input id="c+" type="checkbox">
+        <label for="c+">C++</label> <br>
+        <input id="php" type="checkbox">
+        <label for="php">PHP</label> <br>
+        <input id="rb" type="checkbox">
+        <label for="rb">Ruby</label> <br>
+        <input id="ot" type="checkbox">
+        <label for="ot">Other</label> <br> <br>
+        <label for="ype">Year Of prgramming Experince :</label>
+        <input type="text" name="" id="ype"> <br><br>
+        <label for="tb">Technical Background :</label><br>
+        <textarea name="tb" placeholder="Describe what you achive to hope through this traing ......" rows="3" cols="35" id="tb"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Payment Deatils</legend> <br>
+        <label >Payement Method</label> <br>
+        <input type="radio" name="pd" id="crc">
+        <label for="crc">Credit Card</label><br>
+        <input type="radio" name="pd" id="dc">
+        <label for="dc">Debit Card</label><br>
+        <input type="radio" name="pd" id="bt">
+        <label for="bt">Bank Transfer</label><br>
+        <input type="radio" name="pd" id="pl">
+        <label for="pl">Paypal</label><br> <br>
+        <label for="spp" >Payement Plan</label><br>
+        <select name="spp" id="spp">
+            <option value="--Selct Payment Plan--">--Selct Payment Plan--</option>
+            <option value="Debit card">Debit card</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="UPI">UPI</option>
+        </select> <br><br>
+        <input type="checkbox" name="disc" id="ebd">
+        <label for="ebd">Apply For Early Bird Discount (if availabal)</label>
+
+    </fieldset>
+    <fieldset>
+        <legend>Additional information</legend> <br>
+        <label for="inf">How did you hear about us ?</label> <br>
+        <select name="ai" id="inf">
+            <option value="Selct Option">--Selct Option--</option>
+            <option value=""></option>
+            <option value=""></option>
+
+        </select><br><br>
+        <label for="lg">What are your learning goals ? :</label> <br>
+        <textarea placeholder="Describe what you hope to achive through this trainings ........." name="lg" id="lg" cols="55" rows="4"></textarea> <br><br>
+        <input type="checkbox" name="" id="sub">
+        <label for="sub">Subscribe to our newsletter for updates on news course and offer</label> <br><br>
+        <input type="checkbox" name="" id="tc">
+        <label for="tc">I agree to term & condition</label>
+
+
+    </fieldset><br>
+
+    <button type="submit">Register</button> 
+    <button type="reset">Clear Form</button>
+    </form>
+</body>
+</html>

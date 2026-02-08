@@ -1,0 +1,98 @@
+The <rect> element is used to create a rectangle and variations of a rectangle shape.
+
+The <rect> element has six basic attributes to position and shape the rectangle:
+
+Attribute	Description
+width	Required. The width of the rectangle
+height	Required. The height of the rectangle
+x	The x-position for the top-left corner of the rectangle
+y	The y-position for the top-left corner of the rectangle
+rx	The x radius of the corners of the rectangle (used to round the corners). Default is 0
+ry	The y radius of the corners of the rectangle (used to round the corners). Default is 0
+
+The style attribute is used to define CSS properties for the rectangle
+The CSS fill property defines the fill color of the rectangle
+The CSS stroke-width property defines the width of the border of the rectangle
+The CSS stroke property defines the color of the border of the rectangle
+
+Single <svg> → when shapes are part of one drawing/diagram/logo.
+
+Multiple <svg> → when shapes are independent (icons, separate figures, UI elements).
+
+👉 Most of the time, developers use a single <svg> tag with multiple shapes.
+
+The <circle> element is used to create a circle.
+
+The <circle> element has three basic attributes to position and set the size of the circle:
+
+Attribute	Description
+r	Required. The radius of the circle
+cx	The x-axis center of the circle. Default is 0
+cy	The y-axis center of the circle. Default is 0
+An SVG Circle
+The following example creates a circle:
+
+SVG Line - <line>
+The <line> element is used to create a line.
+
+The <line> element creates a line between the start position (x1,y1) and the end position (x2,y2).
+
+The <line> element has four basic attributes to position and set the length of the line:
+
+Attribute	Description
+x1	The start of the line on the x-axis
+y1	The start of the line on the y-axis
+x2	The end of the line on the x-axis
+y2	The end of the line on the y-axis
+The <polygon> element is used to create a graphic that contains at least three sides.
+
+Polygons are made of straight lines, and the shape is "closed" (it automatically connects the last point with the first).
+
+The <polygon> element has one basic attribute that defines the points of the polygon:
+
+Attribute	Description
+points	Required. The list of points of the polygon. Each point must contain an x coordinate and a y coordinate
+A Polygon With Three Sides
+The following example creates a polygon with three sides:
+
+Here is the SVG code:
+
+Example
+<svg height="220" width="500" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="100,10 150,190 50,190" style="fill:lime;stroke:purple;stroke-width:3" />
+</svg>
+Code explanation:
+
+The points attribute defines the x and y coordinates for each corner of the polygon
+M 20 20 → Move the pen to (20, 20).
+
+L 20 150 → Line down to (20, 150).
+
+L 350 150 → Line across to (350, 150).
+
+L 350 20 → Line up to (350, 20).
+
+Z → Close path, connecting back to the start.
+
+That gives you a filled red rectangle with top-left at (20, 20) and bottom-right at (350, 150).
+Step-by-step points:
+
+M 20 20 → Move to (20,20) → top-left corner
+
+L 20 150 → Line to (20,150) → bottom-left corner
+
+L 350 150 → Line to (350,150) → bottom-right corner
+
+L 350 20 → Line to (350,20) → top-right corner
+
+Z → Close path → connects back to (20,20)
+
+So the four corners of your red rectangle are:
+
+(20,20) → top-left
+
+(20,150) → bottom-left
+
+(350,150) → bottom-right
+
+(350,20) → top-right
